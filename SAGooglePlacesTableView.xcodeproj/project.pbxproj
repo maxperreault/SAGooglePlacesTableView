@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF1794EB17DB3DD8006836DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1794EA17DB3DD8006836DC /* UIKit.framework */; };
+		AF1794ED17DB3DD8006836DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1794EC17DB3DD8006836DC /* Foundation.framework */; };
+		AF1794EF17DB3DD8006836DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1794EE17DB3DD8006836DC /* CoreGraphics.framework */; };
+		AF1794F517DB3DD8006836DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF1794F317DB3DD8006836DC /* InfoPlist.strings */; };
+		AF1794F717DB3DD8006836DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1794F617DB3DD8006836DC /* main.m */; };
+		AF1794FB17DB3DD8006836DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1794FA17DB3DD8006836DC /* AppDelegate.m */; };
+		AF1794FD17DB3DD8006836DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AF1794FC17DB3DD8006836DC /* Default.png */; };
+		AF1794FF17DB3DD8006836DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF1794FE17DB3DD8006836DC /* Default@2x.png */; };
+		AF17950117DB3DD8006836DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF17950017DB3DD8006836DC /* Default-568h@2x.png */; };
+		AF17950417DB3DD8006836DC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF17950217DB3DD8006836DC /* MainStoryboard_iPhone.storyboard */; };
+		AF17950717DB3DD8006836DC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF17950517DB3DD8006836DC /* MainStoryboard_iPad.storyboard */; };
+		AF17950A17DB3DD8006836DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17950917DB3DD8006836DC /* ViewController.m */; };
+		AF17951917DB3E41006836DC /* SPGooglePlacesAutocompletePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17951217DB3E41006836DC /* SPGooglePlacesAutocompletePlace.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF17951A17DB3E41006836DC /* SPGooglePlacesAutocompleteQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17951417DB3E41006836DC /* SPGooglePlacesAutocompleteQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF17951B17DB3E41006836DC /* SPGooglePlacesAutocompleteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17951617DB3E41006836DC /* SPGooglePlacesAutocompleteUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF17951C17DB3E41006836DC /* SPGooglePlacesPlaceDetailQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17951817DB3E41006836DC /* SPGooglePlacesPlaceDetailQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF17951E17DB3E7A006836DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17951D17DB3E7A006836DC /* CoreLocation.framework */; };
+		AF17952117DB3EBC006836DC /* SAGooglePlacesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17952017DB3EBC006836DC /* SAGooglePlacesTableView.m */; };
+		AF7058EC17E301E700BA3757 /* StandAloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7058EB17E301E700BA3757 /* StandAloneViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF1794E717DB3DD8006836DC /* SAGooglePlacesTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAGooglePlacesTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1794EA17DB3DD8006836DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF1794EC17DB3DD8006836DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF1794EE17DB3DD8006836DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF1794F217DB3DD8006836DC /* SAGooglePlacesTableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SAGooglePlacesTableView-Info.plist"; sourceTree = "<group>"; };
+		AF1794F417DB3DD8006836DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF1794F617DB3DD8006836DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF1794F817DB3DD8006836DC /* SAGooglePlacesTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SAGooglePlacesTableView-Prefix.pch"; sourceTree = "<group>"; };
+		AF1794F917DB3DD8006836DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF1794FA17DB3DD8006836DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF1794FC17DB3DD8006836DC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AF1794FE17DB3DD8006836DC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AF17950017DB3DD8006836DC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AF17950317DB3DD8006836DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		AF17950617DB3DD8006836DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		AF17950817DB3DD8006836DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF17950917DB3DD8006836DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF17951117DB3E41006836DC /* SPGooglePlacesAutocompletePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompletePlace.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesAutocompletePlace.h; sourceTree = "<group>"; };
+		AF17951217DB3E41006836DC /* SPGooglePlacesAutocompletePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompletePlace.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesAutocompletePlace.m; sourceTree = "<group>"; };
+		AF17951317DB3E41006836DC /* SPGooglePlacesAutocompleteQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompleteQuery.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteQuery.h; sourceTree = "<group>"; };
+		AF17951417DB3E41006836DC /* SPGooglePlacesAutocompleteQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompleteQuery.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteQuery.m; sourceTree = "<group>"; };
+		AF17951517DB3E41006836DC /* SPGooglePlacesAutocompleteUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompleteUtilities.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteUtilities.h; sourceTree = "<group>"; };
+		AF17951617DB3E41006836DC /* SPGooglePlacesAutocompleteUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompleteUtilities.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteUtilities.m; sourceTree = "<group>"; };
+		AF17951717DB3E41006836DC /* SPGooglePlacesPlaceDetailQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesPlaceDetailQuery.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesPlaceDetailQuery.h; sourceTree = "<group>"; };
+		AF17951817DB3E41006836DC /* SPGooglePlacesPlaceDetailQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesPlaceDetailQuery.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesPlaceDetailQuery.m; sourceTree = "<group>"; };
+		AF17951D17DB3E7A006836DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AF17951F17DB3EBC006836DC /* SAGooglePlacesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAGooglePlacesTableView.h; sourceTree = "<group>"; };
+		AF17952017DB3EBC006836DC /* SAGooglePlacesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAGooglePlacesTableView.m; sourceTree = "<group>"; };
+		AF7058EA17E301E700BA3757 /* StandAloneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandAloneViewController.h; sourceTree = "<group>"; };
+		AF7058EB17E301E700BA3757 /* StandAloneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandAloneViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF1794E417DB3DD8006836DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17951E17DB3E7A006836DC /* CoreLocation.framework in Frameworks */,
+				AF1794EB17DB3DD8006836DC /* UIKit.framework in Frameworks */,
+				AF1794ED17DB3DD8006836DC /* Foundation.framework in Frameworks */,
+				AF1794EF17DB3DD8006836DC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF1794DE17DB3DD8006836DC = {
+			isa = PBXGroup;
+			children = (
+				AF17951D17DB3E7A006836DC /* CoreLocation.framework */,
+				AF17951017DB3E09006836DC /* SPGooglePlacesAutocomplete */,
+				AF1794F017DB3DD8006836DC /* SAGooglePlacesTableView */,
+				AF1794E917DB3DD8006836DC /* Frameworks */,
+				AF1794E817DB3DD8006836DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF1794E817DB3DD8006836DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF1794E717DB3DD8006836DC /* SAGooglePlacesTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF1794E917DB3DD8006836DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF1794EA17DB3DD8006836DC /* UIKit.framework */,
+				AF1794EC17DB3DD8006836DC /* Foundation.framework */,
+				AF1794EE17DB3DD8006836DC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF1794F017DB3DD8006836DC /* SAGooglePlacesTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AF1794F917DB3DD8006836DC /* AppDelegate.h */,
+				AF1794FA17DB3DD8006836DC /* AppDelegate.m */,
+				AF17950217DB3DD8006836DC /* MainStoryboard_iPhone.storyboard */,
+				AF17950517DB3DD8006836DC /* MainStoryboard_iPad.storyboard */,
+				AF17950817DB3DD8006836DC /* ViewController.h */,
+				AF17950917DB3DD8006836DC /* ViewController.m */,
+				AF1794F117DB3DD8006836DC /* Supporting Files */,
+				AF17951F17DB3EBC006836DC /* SAGooglePlacesTableView.h */,
+				AF17952017DB3EBC006836DC /* SAGooglePlacesTableView.m */,
+				AF7058EA17E301E700BA3757 /* StandAloneViewController.h */,
+				AF7058EB17E301E700BA3757 /* StandAloneViewController.m */,
+			);
+			path = SAGooglePlacesTableView;
+			sourceTree = "<group>";
+		};
+		AF1794F117DB3DD8006836DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF1794F217DB3DD8006836DC /* SAGooglePlacesTableView-Info.plist */,
+				AF1794F317DB3DD8006836DC /* InfoPlist.strings */,
+				AF1794F617DB3DD8006836DC /* main.m */,
+				AF1794F817DB3DD8006836DC /* SAGooglePlacesTableView-Prefix.pch */,
+				AF1794FC17DB3DD8006836DC /* Default.png */,
+				AF1794FE17DB3DD8006836DC /* Default@2x.png */,
+				AF17950017DB3DD8006836DC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF17951017DB3E09006836DC /* SPGooglePlacesAutocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				AF17951117DB3E41006836DC /* SPGooglePlacesAutocompletePlace.h */,
+				AF17951217DB3E41006836DC /* SPGooglePlacesAutocompletePlace.m */,
+				AF17951317DB3E41006836DC /* SPGooglePlacesAutocompleteQuery.h */,
+				AF17951417DB3E41006836DC /* SPGooglePlacesAutocompleteQuery.m */,
+				AF17951517DB3E41006836DC /* SPGooglePlacesAutocompleteUtilities.h */,
+				AF17951617DB3E41006836DC /* SPGooglePlacesAutocompleteUtilities.m */,
+				AF17951717DB3E41006836DC /* SPGooglePlacesPlaceDetailQuery.h */,
+				AF17951817DB3E41006836DC /* SPGooglePlacesPlaceDetailQuery.m */,
+			);
+			name = SPGooglePlacesAutocomplete;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF1794E617DB3DD8006836DC /* SAGooglePlacesTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF17950D17DB3DD8006836DC /* Build configuration list for PBXNativeTarget "SAGooglePlacesTableView" */;
+			buildPhases = (
+				AF1794E317DB3DD8006836DC /* Sources */,
+				AF1794E417DB3DD8006836DC /* Frameworks */,
+				AF1794E517DB3DD8006836DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAGooglePlacesTableView;
+			productName = SAGooglePlacesTableView;
+			productReference = AF1794E717DB3DD8006836DC /* SAGooglePlacesTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF1794DF17DB3DD8006836DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = 2bits;
+			};
+			buildConfigurationList = AF1794E217DB3DD8006836DC /* Build configuration list for PBXProject "SAGooglePlacesTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF1794DE17DB3DD8006836DC;
+			productRefGroup = AF1794E817DB3DD8006836DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF1794E617DB3DD8006836DC /* SAGooglePlacesTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF1794E517DB3DD8006836DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1794F517DB3DD8006836DC /* InfoPlist.strings in Resources */,
+				AF1794FD17DB3DD8006836DC /* Default.png in Resources */,
+				AF1794FF17DB3DD8006836DC /* Default@2x.png in Resources */,
+				AF17950117DB3DD8006836DC /* Default-568h@2x.png in Resources */,
+				AF17950417DB3DD8006836DC /* MainStoryboard_iPhone.storyboard in Resources */,
+				AF17950717DB3DD8006836DC /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF1794E317DB3DD8006836DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1794F717DB3DD8006836DC /* main.m in Sources */,
+				AF1794FB17DB3DD8006836DC /* AppDelegate.m in Sources */,
+				AF17950A17DB3DD8006836DC /* ViewController.m in Sources */,
+				AF17951917DB3E41006836DC /* SPGooglePlacesAutocompletePlace.m in Sources */,
+				AF17951A17DB3E41006836DC /* SPGooglePlacesAutocompleteQuery.m in Sources */,
+				AF17951B17DB3E41006836DC /* SPGooglePlacesAutocompleteUtilities.m in Sources */,
+				AF17951C17DB3E41006836DC /* SPGooglePlacesPlaceDetailQuery.m in Sources */,
+				AF17952117DB3EBC006836DC /* SAGooglePlacesTableView.m in Sources */,
+				AF7058EC17E301E700BA3757 /* StandAloneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF1794F317DB3DD8006836DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF1794F417DB3DD8006836DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF17950217DB3DD8006836DC /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17950317DB3DD8006836DC /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AF17950517DB3DD8006836DC /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17950617DB3DD8006836DC /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF17950B17DB3DD8006836DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF17950C17DB3DD8006836DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF17950E17DB3DD8006836DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SAGooglePlacesTableView/SAGooglePlacesTableView-Prefix.pch";
+				INFOPLIST_FILE = "SAGooglePlacesTableView/SAGooglePlacesTableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF17950F17DB3DD8006836DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SAGooglePlacesTableView/SAGooglePlacesTableView-Prefix.pch";
+				INFOPLIST_FILE = "SAGooglePlacesTableView/SAGooglePlacesTableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF1794E217DB3DD8006836DC /* Build configuration list for PBXProject "SAGooglePlacesTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF17950B17DB3DD8006836DC /* Debug */,
+				AF17950C17DB3DD8006836DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF17950D17DB3DD8006836DC /* Build configuration list for PBXNativeTarget "SAGooglePlacesTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF17950E17DB3DD8006836DC /* Debug */,
+				AF17950F17DB3DD8006836DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF1794DF17DB3DD8006836DC /* Project object */;
+}
