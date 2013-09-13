@@ -44,7 +44,7 @@ Queries in this modes need to be executed manually against the tableview instanc
 
 2) As a tableview that is attached to a `UITextField`. In this mode, input entered into the textfield
 is automatically used in a query to fetch Google Places, with the results subsequently displayed in
-the tableview. A tableview in this mode can be constructed using the following factory method:
+a drop-down tableview beneath the textfield. A tableview in this mode can be constructed using the following factory method:
 
 ```
 createAttachedToTextField:withHeight:parentView:selectionBlock:returnBlock
