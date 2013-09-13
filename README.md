@@ -44,25 +44,25 @@ Queries in this modes need to be executed manually against the tableview instanc
 
 2) As a tableview that is attached to a `UITextField`. In this mode, input entered into the textfield
 is automatically used in a query to fetch Google Places, with the results subsequently displayed in
-the tableview.
+the tableview. A tableview in this mode can be constructed using the following factory method:
 
 ```
 createAttachedToTextField:withHeight:parentView:selectionBlock:returnBlock
 ```
 
-![UITextField Tableview](https://github.com/StephenAsherson/SAGooglePlacesTableView/raw/master/Screenshots/TextFieldExample1.png)
+![UITextField Tableview](https://github.com/StephenAsherson/SAGooglePlacesTableView/raw/master/Screenshots/TextFieldExample.png)
 ![UITextField Tableview](https://github.com/StephenAsherson/SAGooglePlacesTableView/raw/master/Screenshots/TextFieldExample2.png)
 
-For more information on the parameters mentioned above, and the properties that can be configured
+For more information on the parameters mentioned above and the properties that can be configured
 for the tableview, please view the `SAGooglePlacesTableView.h` header file comments.
 
 Known Limitations
 -----
 
 - Currently the tableview is not very customizable in terms of its appearance. The font and colours used
-in the list are hard-coded within the SAGooglePlacesTableView source files.
+in the list are hard-coded within the SAGooglePlacesTableView.m source file.
 - When attaching the tableview to a `UITextField`, the tableview takes over as the `UITextFieldDelegate` to the
-`UITextField`. As a result, if another 'UITextFieldDelegate' is required for the textfield, a work-around will be
+`UITextField`. As a result, if another `UITextFieldDelegate` is required for the textfield, a work-around will be
 needed.
 
 Sample Code
