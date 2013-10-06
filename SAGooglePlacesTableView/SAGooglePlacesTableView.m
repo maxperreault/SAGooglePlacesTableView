@@ -222,6 +222,12 @@
         // Check if we need to resolve the selected place.
         if (self.resolveSelectedAddress)
         {
+            // if there is a Geo resolution starting callback, call it now
+            if (self.resolutionStartedBlock != nil)
+            {
+                self.resolutionStartedBlock();
+            }
+            
             [place resolveToPlacemark:^(CLPlacemark *placemark, NSString *addressString, NSError *error)
             {
                 _selectionBlock(place.name , placemark.location.coordinate, self.inputField.text, nil);
@@ -243,11 +249,21 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     self.hidden = NO;
+    
+    if (self.textFieldDelegate != nil && [self.textFieldDelegate respondsToSelector:@selector(textFieldDidBeginEditing:)])
+    {
+        [self.textFieldDelegate textFieldDidBeginEditing:textField];
+    }
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     self.hidden = YES;
+    
+    if (self.textFieldDelegate != nil && [self.textFieldDelegate respondsToSelector:@selector(textFieldDidEndEditing:)])
+    {
+        [self.textFieldDelegate textFieldDidEndEditing:textField];
+    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField

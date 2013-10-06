@@ -12,6 +12,7 @@
 @class SPGooglePlacesAutocompletePlace;
 
 typedef void(^GooglePlaceSelectionBlock)(NSString *placeName, CLLocationCoordinate2D location, NSString *searchTerm, NSError* error);
+typedef void(^GooglePlaceGeoResolutionStartedBlock)(void);
 typedef void(^TextFieldReturnedBlock)(void);
 
 @interface SAGooglePlacesTableView : UITableView <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
@@ -19,12 +20,20 @@ typedef void(^TextFieldReturnedBlock)(void);
 // Property specifying whether geo coordinates of the selected address should be resolved.
 // Defaults to YES
 @property(nonatomic) BOOL resolveSelectedAddress;
+@property(copy, nonatomic) GooglePlaceGeoResolutionStartedBlock resolutionStartedBlock; // can be used as a callback when Geo resolution for a selected place has started.
 
 // Location and radius (in meters) properties which can be used to refine the search results.
 // Setting a radius biases results to the indicated area but may not completely restrict them.
 // Default is unspecified.
 @property(nonatomic) CLLocationCoordinate2D location;
 @property (nonatomic) CGFloat radius;
+
+// Assign a UITextFieldDelegate to the tableview. This is only applicable if this
+// tableview is attached to a UITextField.
+// This tableview will relay events from the UITextField to this delegate.
+// Currently, only the textFieldDidBeginEditing and textFieldDidEndEditing events
+// are relayed.
+@property(weak, nonatomic) id<UITextFieldDelegate> textFieldDelegate;
 
 /*
  * Factory methods
