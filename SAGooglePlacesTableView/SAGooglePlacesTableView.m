@@ -9,6 +9,7 @@
 #import "SAGooglePlacesTableView.h"
 #import "SPGooglePlacesAutocompleteQuery.h"
 #import "SPGooglePlacesAutocompletePlace.h"
+#import "SPGooglePlacesPlacemark.h"
 
 // The margin between the TextField and the tableview.
 #define kTopMargin 5.0
@@ -228,7 +229,7 @@
                 self.resolutionStartedBlock();
             }
             
-            [place resolveToPlacemark:^(CLPlacemark *placemark, NSString *addressString, NSError *error)
+            [place resolveToPlacemark:^(SPGooglePlacesPlacemark *placemark, NSString *addressString, NSError *error)
             {
                 _selectionBlock(place.name , placemark.location.coordinate, self.inputField.text, nil);
             }];
