@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import<CoreLocation/CoreLocation.h>
+#import "SPGooglePlacesAutocompletePlace.h"
 
-@class SPGooglePlacesAutocompletePlace;
-
-typedef void(^GooglePlaceSelectionBlock)(NSString *placeName, CLLocationCoordinate2D location, NSString *searchTerm, NSError* error);
+typedef void(^GooglePlaceSelectionBlock)(NSString *placeName, CLLocationCoordinate2D location, SPGooglePlacesAutocompletePlace *place, NSString *searchTerm, NSError* error);
 typedef void(^GooglePlaceGeoResolutionStartedBlock)(void);
 typedef void(^TextFieldReturnedBlock)(void);
 

@@ -165,7 +165,7 @@
         {
             if (_selectionBlock != nil)
             {
-                _selectionBlock(nil, kCLLocationCoordinate2DInvalid, queryString, error);
+                _selectionBlock(nil, kCLLocationCoordinate2DInvalid, nil, queryString, error);
             }
             
             return;
@@ -231,12 +231,12 @@
             
             [place resolveToPlacemark:^(SPGooglePlacesPlacemark *placemark, NSString *addressString, NSError *error)
             {
-                _selectionBlock(place.name , placemark.location.coordinate, self.inputField.text, nil);
+                _selectionBlock(place.name , placemark.location.coordinate, place, self.inputField.text, nil);
             }];
         }
         else 
         {
-            _selectionBlock(place.name , kCLLocationCoordinate2DInvalid, self.inputField.text, nil);
+            _selectionBlock(place.name , kCLLocationCoordinate2DInvalid, place, self.inputField.text, nil);
         }
     }
     
